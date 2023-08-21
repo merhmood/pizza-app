@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    font-family: "Alegreya Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.home {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.decoration {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    position: fixed;
+    z-index: -1;
+}
+.one {
+    background-color: rgba(18, 18, 100, 0.61);
+    top: -10vh;
+    left: -7vw;
+}
+.two {
+    background-color: rgba(0, 255, 34, 0.288);
+    top: 70vh;
+    left: 90vw;
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+h3 {
+    font-family: "Rammetto One", cursive;
+}
+a {
+    color: black;
+}
+
+p {
+    color: #8d8d8d;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+span {
+    font-family: "Rammetto One", cursive;
+    color: rgb(131, 35, 35);
+}
+header nav a {
+    text-decoration: none;
+}
+header nav a button {
+    margin-inline-start: 20px;
+}
+
+@media screen and (max-width: 499px) {
+    header h3 {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-block-start: 30px;
+        padding-block-end: 15px;
+        border-block-end: 1px solid #b8b8b8;
+    }
+}
+.intro {
+    margin-block-start: 25px;
+}
+.intro div:last-child img {
+    width: 100%;
+}
+.intro div:first-child p {
+    margin: 20px 0;
+}
+@media screen and (min-width: 801px) {
+    .intro {
+        display: flex;
+        align-items: center;
+    }
+    .intro div:first-child h3 {
+        font-size: 40px;
+    }
+    .intro div:first-child p {
+        font-size: 20px;
+    }
+    .intro > div {
+        width: 100%;
+    }
+    .intro div:last-child {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .intro {
+        flex-direction: column-reverse;
+    }
+}
+
+.pizza-section {
+    margin-block-start: 150px;
+}
+
+.pizza-section h3 {
+    margin-block-end: 30px;
+}
+.pizzas .pizza:last-child {
+    margin-inline-end: 0;
+}
+.pizzas .pizza img {
+    width: 100%;
+    border-radius: 25px;
+}
+.pizzas .pizza .pizza-details {
+    position: relative;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.2rem;
+    top: -35px;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pizzas .pizza .pizza-details:hover {
+    cursor: pointer;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pizzas .pizza .pizza-details > p {
+    color: black;
+}
+.pizzas .pizza .pizza-details p {
+    padding-block-end: 8px;
+}
+
+.pizzas .pizza .pizza-SP {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 801px) {
+    .pizzas {
+        display: flex;
+    }
+    .pizzas .pizza:nth-child(n + 1) {
+        margin-inline-end: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pizzas .pizza {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
